@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title> Klaus D. Wolfer :: Clean CV / Resume / Portfolio Website :: </title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<meta name="description" content=" ... add description here ... " />
+	<meta name="keywords" content=" ... add keywords here ... " />
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	
+	<!-- //////// Favicon ////////  -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
+	
+	<!-- //////// Css StyleSheets ////////  -->
+	<link href="_layout/style.css"       rel="stylesheet" type="text/css" media="all"   />
+	<link href="_layout/style-print.css" rel="stylesheet" type="text/css" media="print" />
+
+	<!-- //////// jQuery ////////  -->
+	<script src="_layout/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	
+	<!-- //////// DD_belatedPNG - Png Fix for IE ////////  -->
+	<!--[if IE 6 ]>
+		<script type="text/javascript" src="_layout/js/DD_belatedPNG_0.0.7a-min.js"></script>
+		<script type="text/javascript">
+			DD_belatedPNG.fix('#header,#content,#footer');
+		</script>
+	<![endif]-->
+	
+	<!-- //////// Cufon Font Replacement ////////  -->
+	<script type="text/javascript" src="_layout/js/cufon/cufon-yui.js"></script>
+	<script type="text/javascript" src="_layout/js/cufon/hattori_hanzo.font.js"></script>
+
+	<!-- //////// Tipsy - custom Tooltips ////////  -->
+	<link rel="stylesheet" type="text/css" href="_layout/js/tipsy/css.tipsy.css" />
+	<script type="text/javascript" src="_layout/js/tipsy/jquery.tipsy.js"></script>
+
+	<!-- //////// PrettyPhoto ////////  -->
+	<link rel="stylesheet" type="text/css" href="_layout/js/prettyphoto/css.prettyPhoto.css" />
+	<script type="text/javascript" src="_layout/js/prettyphoto/jquery.prettyPhoto.js"></script>
+	
+	<!-- //////// Inset Border ////////  -->
+	<script type="text/javascript" src="_layout/js/insetbordereffect/jquery.insetBorderEffect.min.js"></script>
+	
+	<!-- //////// Customs JS  ////////  -->	
+	<script type="text/javascript">
+	/* <![CDATA[ */	                                         
+		$(document).ready(function(){
+		
+			// font replacement
+			if ( ! ( $.browser.msie & ($.browser.version == 6) ) )
+			{ 	
+				$("h1#name").css({'font-size':'46px', 'padding-top':'20px' , 'margin-bottom':'0px' });
+				Cufon.replace('#portfolio h2, h2.cv-section-name, h1#name, h2.title'); // using cufon with IE6 breaks the layout in some cases
+				
+			}	
+			
+			// tooltips
+			$('.tip').tipsy({gravity: 'e'});	//  apply class .tip to any <a> tag to make it's  title be displayed like a tooltip
+			
+			// lightbox
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				theme: 'light_square',
+				hideflash: false, 		// Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto
+				wmode: 'opaque', 		// Set the flash wmode attribute
+				autoplay: true, 		// Automatically start videos: True/False
+				modal: false 			// If set to true, only the close button will close the window
+			});
+			
+			// inset border of portofolio item imgs
+			$('#portfolio .portfolio-item img').insetBorder({
+			  inset : 10,
+			  borderColor : '#fff',
+			  speed : 250,
+			  borderType : 'solid'
+			});
+		
+		});
+	/* ]]> */			
+	</script> 
+	
+</head>
+<body>
+	
+	<noscript>
+		<link href="_layout/nojs.css" rel="stylesheet" type="text/css" media="all" />
+		<div id="nojs">JavaScript seems to be Disabled! This website works best with JavaScript enabled.</div>
+	</noscript>
+	
+	<div id="wrap">
+	
+		<div id="header">
+			
+			<div id="block-top"></div>
+			
+			<div id="personal-info" class="fixed">
+			
+				<a id="picture-of-you" href="_content/klw.jpg" title="your picture" rel="prettyPhoto">
+					<img src="_content/klw.jpg" height="100" alt="" />
+				</a>
+				
+				<h1 id="name">Klaus D. Wolfer</h1>
+				<h2 id="what-you-do">Bid Manager & PMO Specialist</h2>
+				
+			</div><!-- end #personal-info -->
+					
+			<ul id="nav" class="fixed">
+				<li><a href="index.html">Resume</a></li>
+				<li>/</li>
+				<li><a href="portfolio.html" class="active">Portfolio</a></li>
+				<li>/</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul><!-- end #nav -->
+
+			<div class="divider"></div>
+			
+		</div><!-- end #header -->
+		
+		<div id="content" class="fixed">
+		<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+			<h2 class="title">Portfolio</h2>
+
+			<div id="portfolio" class="fixed">
+
+				<div class="portfolio-item col-3 float-left padded-right">
+
+					<a href="_content/472x294-OPScenterVTS.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/472x294-OPScenterVTS.jpg" width="216" height="141" alt="" />					
+					</a>
+
+					<br />
+						
+					<h2>OPScenter VTS</h2>
+					
+					<p>Bids & marketing for <a href="https://www.barco.com/en/Products/Starter-package-VTS-system.aspx" title="OPScenter VTS" target=_blank>OPScenter VTS</a>, an innovative solution for improved safety and efficiency for port and coastal vessel traffic.</p>
+
+		
+				</div><!-- end .portfolio-item -->
+			
+			
+				<div class="portfolio-item col-3 float-left padded-right">
+						
+					<a href="_content/640x550-OPScenterVTS.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/640x550-OPScenterVTS.jpg" width="216" height="141" alt="" />
+					</a>
+					
+					<br />
+
+						
+					<h2>MRCC Ostend</h2>
+					
+					<p>Bid Manager for preparation of a winning proposal for the <a href="http://www.barco.com/en/Customer%20stories/2005/Q1/2005-03-02%20-%20MRCC%20Ostend%20%20State-of-the-art%20Maritime%20Rescue" title="MRCC" target=_blank>Maritime Rescue Coordination Center</a> of Ostend (Belgium).</p>
+
+										
+				</div><!-- end .portfolio-item -->
+				
+				
+				<div class="portfolio-item col-3 float-left">
+				
+					<a href="_content/arcas-fraport.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/arcas-fraport.jpg" width="216" height="141" alt="" />
+
+					</a>
+					
+					<br />
+						
+					<h2>ARCAS Product</h2>
+
+					<p>Product Manager for <a href="http://www.barco.com/de/product/arcas" title="ARCAS" target=_blank>ARCAS</a> (Airside Slot Capacity Assistant) for advanced analysis of runway capacity and flight schedule optimization.</p>
+					
+				</div><!-- end .portfolio-item -->
+
+				
+				
+				<div class="portfolio-item col-3 float-left padded-right clear ">
+
+					<a href="_content/fis-screen.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/fis-idea.jpg" width="216" height="141" alt="" />					
+					</a>
+
+					<br />
+						
+					<h2>Technician Infosystem</h2>
+					
+					<p>SW Developer of an information system (<a href="https://books.google.de/books?id=MKgDBgAAQBAJ&pg=PA79&lpg=PA79&dq=facharbeiter+informationssystem+fis+seiffert&source=bl&ots=z_lr3QCUD_&sig=SBvWOG8GjO4rLAO90Gm5anmhl64&hl=de&sa=X&ved=0ahUKEwiDwYX3w4rYAhWFFZoKHVEzBeQQ6AEIKDAA#v=onepage&q=facharbeiter%20informationssystem%20fis%20seiffert&f=false"title="FIS" target=_blank>FIS</a>) for skilled workers to maintain tips & tricks, photos, annotations, catalogs, bill of materials and more ...</p>
+
+					
+				</div><!-- end .portfolio-item -->
+			
+			
+				<div class="portfolio-item col-3 float-left padded-right">
+						
+					<a href="_content/matchbox-fraport.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/matchbox-fraport.jpg" width="216" height="141" alt="" />
+					</a>
+					
+					<br />
+						
+					<h2>Matchbox Project</h2>
+					
+					<p>Winning proposal for MATCHBOX, an innovative Fraport solution to manage airside slot capacity at Frankfurt International Airport. </p>
+											
+				</div><!-- end .portfolio-item -->
+				
+				
+				<div class="portfolio-item col-3 float-left">
+				
+					<a href="_content/iks-pirelli.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/iks-pirelli.jpg" width="216" height="141" alt="" />
+
+					</a>
+					
+					<br />
+						
+					<h2>eKanban Solution</h2>
+					
+
+					<p>Project & Product Manager of <a href="http://www.manufactus.com" title="IKS" target=_blank>IKS</a>, an integrated electronic kanban-based production control system applying pull philosophy. </p>
+					
+								</div><!-- end .portfolio-item -->
+
+				<div class="portfolio-item col-3 float-left padded-right">
+
+					<a href="_content/maritime-master-thales-screencast.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/maritime-master-thales.jpg" width="216" height="141" alt="" />					
+					</a>
+
+					<br />
+						
+					<h2>Maritime Master</h2>
+					
+
+					<p>Marketing and sales support for <a href="http://www.thalesgroup.com/Portfolio/Security/D3S_Maritime_Safety_and_security/?pid=1320" target=_blank>Maritime Safety & Security</a>.</p>
+
+		
+				</div><!-- end .portfolio-item -->
+			
+			
+				<div class="portfolio-item col-3 float-left padded-right">
+						
+					<a href="_content/whitepaper-tci-figure.jpg" class="bordered" rel="prettyPhoto[portfolio]">
+						<img src="_content/whitepaper-tci.jpg" width="216" height="141" alt="" />
+					</a>
+					
+					<br />
+						
+					<h2>VTS Whitepaper</h2>
+					
+					<p>Document writer for a proposal for Track Classification & Identification as extension of the OPScenter VTS/CoSS System.</p>
+
+										
+				</div><!-- end .portfolio-item -->
+				
+				<div class="portfolio-pagination col-1 clear">
+
+					<ul>
+						<li><a href="#" class="active">1</a></li>
+						<li><a href="portfolio-2.html">2</a></li>
+						<li><a href="portfolio-2.html">Next &raquo;</a></li>
+					</ul>
+				</div><!-- end portfolio-pagination -->
+			
+			
+				
+			</div><!-- end #portfolio -->
+
+			
+		<!-- ////////////////////////////////////////////////////////////////////////////////////// -->	
+		</div><!-- end #content -->
+		
+		<div id="footer" class="fixed">
+			
+			<div class="divider2"></div>
+			
+			<p id="copyright">&copy; 2018 Klaus D. Wolfer. All rights reserved.</p>
+			<a href="#" id="top">&#710; Top</a>
+			
+		</div><!-- end #footer -->
+		
+	</div><!-- end #wrap -->
+	
+	<script type="text/javascript"> Cufon.now(); </script>
+
+	<!-- analytics code here -->
+
+</body>
+</html>
